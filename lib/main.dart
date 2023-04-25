@@ -2,7 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
 // import 'package:pettie_petstore/src/features/authentication/screens/login/login_screen.dart';
-import 'package:pettie_petstore/src/features/authentication/screens/on_boarding_screen/on_boarding_screen.dart';
+// import 'package:pettie_petstore/src/features/authentication/screens/on_boarding_screen/on_boarding_screen.dart';
+import 'package:pettie_petstore/src/features/authentication/screens/welcome/welcome_screen.dart';
 
 
 import 'package:pettie_petstore/src/utis/theme/theme.dart';
@@ -24,7 +25,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       defaultTransition: Transition.leftToRightWithFade,
       transitionDuration: const Duration(microseconds: 500),
-      home: const OnBoardingScreen(),
+      home: const WelcomeScreen(),
     );
   }
 }

@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:pettie_petstore/src/features/core/screens/dashboard/dashboard.dart';
 
-import 'package:pettie_petstore/src/features/authentication/screens/dashboard/widgets/dashboard.dart';
 
 
 import '../../../../constants/string_manager.dart';
 import '../forgot_password/forgot_password_option/model_buttom_sheet.dart';
-import '../home/dashboard.dart';
+
 
 
 class LoginForm extends StatelessWidget {
@@ -60,7 +60,7 @@ class LoginForm extends StatelessWidget {
                 width: double.infinity,
                 child: ElevatedButton(
                   onPressed: () {
-Get.to(()=>const HomePage());
+Get.to(()=>const Dashboard());
 
 
                   },
