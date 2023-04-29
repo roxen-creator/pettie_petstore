@@ -8,7 +8,8 @@ class PElevatedButtonTheme{
   static final lightElevatedButtonTheme = ElevatedButtonThemeData(
 style: OutlinedButton.styleFrom(
                   elevation: 0,
-                shape: const RoundedRectangleBorder(),
+                  
+                shape: const StadiumBorder(),
                backgroundColor: cSecondaryColor,
                foregroundColor: cWhiteColor,
                 side:  const BorderSide(color: cSecondaryColor),
@@ -20,7 +21,7 @@ style: OutlinedButton.styleFrom(
  static final darkElevatedButtonTheme = ElevatedButtonThemeData(
 style: OutlinedButton.styleFrom(
                   elevation: 0,
-                shape: const RoundedRectangleBorder(),
+                shape: const StadiumBorder(),
                
                foregroundColor: cSecondaryColor,
                backgroundColor:cWhiteColor,

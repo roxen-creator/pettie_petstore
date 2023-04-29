@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+
 import 'package:pettie_petstore/src/common_widgets/form/form_header_widget.dart';
 
 import 'package:pettie_petstore/src/constants/image_string.dart';
@@ -6,6 +8,8 @@ import 'package:pettie_petstore/src/constants/image_string.dart';
 import 'package:pettie_petstore/src/constants/size.dart';
 import 'package:pettie_petstore/src/constants/string_manager.dart';
 import 'package:pettie_petstore/src/features/authentication/screens/signup/signup_form_widget.dart';
+
+import '../login/login_screen.dart';
 
 class SignupScreen extends StatelessWidget {
   const SignupScreen({super.key});
@@ -40,7 +44,7 @@ class SignupScreen extends StatelessWidget {
                       label: Text("Signin with google".toUpperCase()),),
                     ),
                 //  15.38min
-                  TextButton(onPressed: (){},
+                  TextButton(  onPressed: () => Get.to(() => const LoginScreen()),
                    child:  Text.rich(
                     TextSpan(children:[
                       TextSpan(

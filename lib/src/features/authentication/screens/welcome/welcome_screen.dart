@@ -7,6 +7,7 @@ import 'package:pettie_petstore/src/constants/string_manager.dart';
 
 import '../../../../constants/size.dart';
 import '../login/login_screen.dart';
+import '../signup/signup_screen.dart';
 
 class WelcomeScreen extends StatelessWidget {
   const WelcomeScreen({super.key});
@@ -54,7 +55,7 @@ class WelcomeScreen extends StatelessWidget {
                 ),
                 Expanded(
                   child: ElevatedButton(
-                    onPressed: () {},
+                    onPressed: () => Get.to(() => const SignupScreen()) ,
                     child: Text(pSingup.toUpperCase()),
                   ),
                 ),

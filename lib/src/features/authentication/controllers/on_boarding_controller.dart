@@ -5,7 +5,7 @@ import '../models/on_boarding_model.dart';
 import '../../../constants/image_string.dart';
 import '../../../constants/color_manager.dart';
 import '../../../constants/string_manager.dart';
-import '../../../utis/theme/widget_theme/on_boarding_page_widget.dart';
+import '../screens/on_boarding_screen/widgets/on_boarding_page_widget.dart';
 
 class OnBoardingController extends GetxController {
   final controller = LiquidController();
@@ -44,8 +44,10 @@ class OnBoardingController extends GetxController {
     int nextPage = controller.currentPage + 1;
     controller.animateToPage(page: nextPage);
   }
+ bool get isLastPage => currentPage.value == pages.length - 1;
 
   skip() => controller.jumpToPage(page: 2);
+  
 
   onPageChangeCallback(int activePageIndex) =>
       currentPage.value = activePageIndex;

@@ -10,9 +10,15 @@ class TTextTHeme {
       fontSize: 20.0,
       fontWeight: FontWeight.w700,
     ),
+    
     displayMedium: GoogleFonts.montserrat(
       color: Colors.black87,
       fontSize: 24.0,
+      fontWeight: FontWeight.bold,
+    ),
+      displayLarge: GoogleFonts.montserrat(
+      color: Colors.black87,
+      fontSize: 28.0,
       fontWeight: FontWeight.bold,
     ),
     bodyLarge: GoogleFonts.poppins(
@@ -34,6 +40,11 @@ class TTextTHeme {
     displayMedium: GoogleFonts.montserrat(
       color: Colors.white,
       fontSize: 24.0,
+      fontWeight: FontWeight.bold,
+    ),
+      displayLarge: GoogleFonts.montserrat(
+      color: Colors.black87,
+      fontSize: 28.0,
       fontWeight: FontWeight.bold,
     ),
     bodyLarge: GoogleFonts.poppins(

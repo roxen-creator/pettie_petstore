@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-import '../../../features/authentication/models/on_boarding_model.dart';
-import '../../../constants/size.dart';
+import '../../../models/on_boarding_model.dart';
+import '../../../../../constants/size.dart';
 
 class OnboardingScreenWidget extends StatelessWidget {
   const OnboardingScreenWidget({

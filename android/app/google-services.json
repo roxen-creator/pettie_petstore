@@ -1,0 +1,54 @@
+{
+  "project_info": {
+    "project_number": "513171884416",
+    "project_id": "flutter-pettie",
+    "storage_bucket": "flutter-pettie.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:513171884416:android:a9f40710c0116f91e35965",
+        "android_client_info": {
+          "package_name": "com.example.pettie_petstore"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "513171884416-g6h4v89itc9ir9bq7lg91oa915mlm09v.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.pettie_petstore",
+            "certificate_hash": "eebef6a1cb196d89ac1ee023e624b3c4d2cd8d74"
+          }
+        },
+        {
+          "client_id": "513171884416-1eatksdg94psj741ufudji4sb9ntqb8n.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDJnLeUJjAmb3u5k2VkwLis-RpHCeeTUqY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "513171884416-1eatksdg94psj741ufudji4sb9ntqb8n.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "513171884416-t21uaga4nbrae5dib1pk00eqdeo0tdup.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.pettiePetstore"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

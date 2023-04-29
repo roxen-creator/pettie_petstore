@@ -1,5 +1,7 @@
 
 
+// ignore_for_file: prefer_const_constructors
+
 import 'package:flutter/material.dart';
 
 class SearchBar extends StatefulWidget {
@@ -35,18 +37,29 @@ class _SearchBarState extends State<SearchBar> {
           const SizedBox(width: 1),
           Expanded(
             child: TextField(
-              controller: _searchController,
-              focusNode: _searchFocusNode,
-              decoration: const InputDecoration(
-                hintText: 'Search',
-                hintStyle: TextStyle(
-                  fontFamily: 'monospace',
-                  fontStyle: FontStyle.normal,
-                ),
-                contentPadding: EdgeInsets.symmetric(horizontal: 10),
-                border: InputBorder.none,
-              ),
-            ),
+  controller: _searchController,
+  focusNode: _searchFocusNode,
+  decoration: InputDecoration(
+    hintText: 'Search',
+    hintStyle: TextStyle(
+      fontFamily: 'monospace',
+      fontStyle: FontStyle.normal,
+    ),
+    contentPadding: EdgeInsets.symmetric(horizontal: 10),
+    border: OutlineInputBorder(
+      borderRadius: BorderRadius.circular(25.0),
+      borderSide: BorderSide.none,
+    ),
+    enabledBorder: OutlineInputBorder(
+      borderRadius: BorderRadius.circular(25.0),
+      borderSide: BorderSide.none,
+    ),
+    focusedBorder: OutlineInputBorder(
+      borderRadius: BorderRadius.circular(25.0),
+      borderSide: BorderSide.none,
+    ),
+  ),
+),
           ),
           const SizedBox(width: 2),
           IconButton(
@@ -63,7 +76,7 @@ class _SearchBarState extends State<SearchBar> {
               });
             },
           ),
-          const SizedBox(width: 5),
+         
           AnimatedContainer(
             duration: const Duration(milliseconds: 300),
             width: _showFilters ? 60 : 50,
@@ -81,15 +94,17 @@ class _SearchBarState extends State<SearchBar> {
               children: [
                 const SizedBox(width: 5),
                 ElevatedButton(
+                
                   onPressed: () {
-                    // Apply filter for price
+                   
                   },
                   child: const Text('Price'),
                 ),
                 const SizedBox(width: 5),
                 ElevatedButton(
+                  
                   onPressed: () {
-                    // Apply filter for recently added
+                   
                   },
                   child: const Text('Recently Added'),
                 ),

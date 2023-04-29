@@ -1,14 +1,18 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_otp_text_field/flutter_otp_text_field.dart';
+import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:pettie_petstore/src/constants/size.dart';
 import 'package:pettie_petstore/src/constants/string_manager.dart';
+import 'package:pettie_petstore/src/features/authentication/controllers/otp_controller.dart';
 
 class OTPScreen extends StatelessWidget {
   const OTPScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
+    var otp;
+    var otpController = Get.put(OTPController());
     return Scaffold(
       body: Container(
         padding: const EdgeInsets.all(pDefaultSize),
@@ -28,7 +32,7 @@ class OTPScreen extends StatelessWidget {
             ),
             const SizedBox(height: 40.0),
             const Text(
-              "$otpMessage support@roxen.com",
+              "$otpMessage.",
               textAlign: TextAlign.center,
             ),
             const SizedBox(height: 20.0),
@@ -36,10 +40,11 @@ class OTPScreen extends StatelessWidget {
               numberOfFields: 6,
               fillColor: Colors.black.withOpacity(0.1),
               filled: true,
-              // ignore: avoid_print
+       
               onSubmit: (code) {
-                // ignore: avoid_print
-                print("OTP is => $code");
+
+             otp= code;
+              OTPController.instance.verifyOTP(otp);
               },
             ),
             const SizedBox(
@@ -48,7 +53,10 @@ class OTPScreen extends StatelessWidget {
             SizedBox(
                 width: double.infinity,
                 child:
-                    ElevatedButton(onPressed: () {}, child: const Text("NEXT")))
+                    ElevatedButton(
+                      onPressed: () {
+                      OTPController.instance.verifyOTP(otp);
+                    }, child: const Text("NEXT")))
           ],
         ),
       ),

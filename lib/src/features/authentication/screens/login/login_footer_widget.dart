@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:get/get_core/src/get_main.dart';
+import 'package:pettie_petstore/src/features/authentication/screens/signup/signup_screen.dart';
 
 import '../../../../constants/image_string.dart';
 import '../../../../constants/string_manager.dart';
@@ -35,7 +38,7 @@ class LoginFooterWIdget extends StatelessWidget {
           height: 10,
         ),
         TextButton(
-          onPressed: () {},
+            onPressed: () => Get.to(() => const SignupScreen()),
           child:  Text.rich(TextSpan(
               text: donthaveaccount,
               style: Theme.of(context).textTheme.bodyMedium,

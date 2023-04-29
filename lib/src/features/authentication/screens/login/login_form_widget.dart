@@ -27,7 +27,7 @@ class LoginForm extends StatelessWidget {
                 prefixIcon: Icon(Icons.person_outline_outlined),
                 labelText: 'Email',
                 hintText: 'Enter Email',
-                border: OutlineInputBorder(),
+               
               ),
             ),
             const SizedBox(
@@ -38,7 +38,7 @@ class LoginForm extends StatelessWidget {
                 prefixIcon: Icon(Icons.fingerprint_sharp),
                 labelText: 'Password',
                 hintText: 'Enter password',
-                border: OutlineInputBorder(),
+                
                 suffixIcon: IconButton(
                   onPressed: null,
                   icon: Icon(Icons.remove_red_eye),
@@ -59,6 +59,7 @@ class LoginForm extends StatelessWidget {
             SizedBox(
                 width: double.infinity,
                 child: ElevatedButton(
+                  
                   onPressed: () {
 Get.to(()=>const Dashboard());
 
