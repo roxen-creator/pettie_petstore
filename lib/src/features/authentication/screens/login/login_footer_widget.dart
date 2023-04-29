@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:get/get_core/src/get_main.dart';
+
 import 'package:pettie_petstore/src/features/authentication/screens/signup/signup_screen.dart';
 
 import '../../../../constants/image_string.dart';

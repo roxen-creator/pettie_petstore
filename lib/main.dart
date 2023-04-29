@@ -2,13 +2,13 @@ import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:pettie_petstore/firebase_options.dart';
-
-import 'package:pettie_petstore/src/features/authentication/screens/on_boarding_screen/on_boarding_screen.dart';
+import 'package:pettie_petstore/src/features/core/screens/dashboard/dashboard.dart';
 
 
 
 
 import 'package:pettie_petstore/src/repository/authentication_repository/authentication_repository.dart';
+import 'package:pettie_petstore/src/routing/app_router.dart';
 
 
 import 'package:pettie_petstore/src/utis/theme/theme.dart';
@@ -33,8 +33,9 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       defaultTransition: Transition.leftToRightWithFade,
       transitionDuration: const Duration(microseconds: 500),
-     
-   home: const OnBoardingScreen(),
+     onGenerateRoute: AppRouter.onGenerateRoute,
+initialRoute: Dashboard.routeName,
+   
    
     );
   }
