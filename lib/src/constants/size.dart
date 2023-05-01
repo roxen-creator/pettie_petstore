@@ -1,5 +1,6 @@
 const pDefaultSize = 30.0;
 const pButtonHeight = 15.0;
+const pButtonWidth = 15.0;
 const pFormheight = 30.0;
 
 const dashBoardPadding = 20.0;

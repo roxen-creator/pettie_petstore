@@ -9,11 +9,13 @@ class PElevatedButtonTheme{
 style: OutlinedButton.styleFrom(
                   elevation: 0,
                   
-                shape: const StadiumBorder(),
+                // shape:  StadiumBorder(),
+                 shape: const StadiumBorder(),
+                
                backgroundColor: cSecondaryColor,
                foregroundColor: cWhiteColor,
                 side:  const BorderSide(color: cSecondaryColor),
-                padding: const EdgeInsets.symmetric(vertical:pButtonHeight ),
+            padding:  const EdgeInsets.symmetric(vertical:pButtonHeight, horizontal: pButtonWidth),
                 ),
 );
 
@@ -21,14 +23,15 @@ style: OutlinedButton.styleFrom(
  static final darkElevatedButtonTheme = ElevatedButtonThemeData(
 style: OutlinedButton.styleFrom(
                   elevation: 0,
-                shape: const StadiumBorder(),
-               
+                // shape: const StadiumBorder(),
+               shape: const StadiumBorder(),
+  
                foregroundColor: cSecondaryColor,
                backgroundColor:cWhiteColor,
 
                
                 side:  const BorderSide(color: cWhiteColor),
-                padding: const EdgeInsets.symmetric(vertical:pButtonHeight ),
+                padding:  const EdgeInsets.symmetric(vertical:pButtonHeight, horizontal: pButtonWidth),
                 ),
 );
 

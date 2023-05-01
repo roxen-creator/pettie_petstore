@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
 
 import '../../models/product/product_model.dart';
-import '../product/product_card.dart';
+import 'product_card.dart';
 
 class ProductCarousel extends StatelessWidget {
+
+  
   final List<Product> products;
   const ProductCarousel({
     super.key, required this.products,

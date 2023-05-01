@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:pettie_petstore/src/features/core/models/category_model/category_model.dart';
 import 'package:pettie_petstore/src/features/core/models/product/product_model.dart';
-import 'package:pettie_petstore/src/features/core/screens/product/product_card.dart';
+import 'package:pettie_petstore/src/features/core/screens/widget/product_card.dart';
 
 import 'package:pettie_petstore/src/features/core/screens/widget/nav_bar.dart';
 
 import '../widget/app_bar.dart';
 
 class CatalogScreen extends StatelessWidget {
-  static const String routeName = '/';
+  static const String routeName = '/catalog';
   static Route route({required Category category}) {
     return MaterialPageRoute(
       settings: const RouteSettings(name: routeName),

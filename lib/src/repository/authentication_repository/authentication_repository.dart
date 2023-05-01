@@ -77,6 +77,7 @@ throw ex;
       String email, String password) async {
     try {
       await _auth.signInWithEmailAndPassword(email: email, password: password);
+    // ignore: empty_catches
     } on FirebaseAuthException catch (e) {} catch (_) {}
   }
 

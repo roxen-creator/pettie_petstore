@@ -1,6 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:pettie_petstore/src/features/core/models/product/product_model.dart';
+import 'package:pettie_petstore/src/features/core/screens/product/product_screen.dart';
 
-import '../features/core/screens/dashboard/dashboard.dart';
+import '../features/core/models/category_model/category_model.dart';
+
+import '../features/core/screens/screens.dart';
 
 
 class AppRouter{
@@ -10,14 +14,14 @@ class AppRouter{
     switch (settings.name){
       case'/': 
       return Dashboard.route();
-    //   case Dashboard.routeName: return Dashboard.route();
-    
-    // case Cart.routeName:
-    // return Cart.route();
-    // case Wishlist.routeName:
-    // return Wishlist.route();
-    // case CatalogScreen.routeName:
-    // return CatalogScreen.route(category: settings.arguments as Category);
+    case Cart.routeName:
+    return Cart.route();
+    case ProductScreen.routeName:
+    return ProductScreen.route(product: settings.arguments as Product);
+    case Wishlist.routeName:
+    return Wishlist.route();
+    case CatalogScreen.routeName:
+    return CatalogScreen.route(category: settings.arguments as Category);
     default:
     return _errorRoute();
     

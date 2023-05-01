@@ -15,6 +15,7 @@ class SignupFormWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final controller = Get.put(SignUpController());
+    // ignore: no_leading_underscores_for_local_identifiers
     final _formKey = GlobalKey<FormState>();
     return Container(
       padding: const EdgeInsets.symmetric(vertical: 20),

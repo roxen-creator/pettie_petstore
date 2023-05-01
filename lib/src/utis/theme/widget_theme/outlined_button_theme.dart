@@ -11,7 +11,7 @@ class POutlinedButtonTheme {
       shape:const StadiumBorder(),
       foregroundColor: cSecondaryColor,
       side: const BorderSide(color: cSecondaryColor),
-      padding: const EdgeInsets.symmetric(vertical: pButtonHeight),
+      padding:  const EdgeInsets.symmetric(vertical: pButtonHeight, horizontal: pButtonWidth ),
     ),
   );
 
@@ -20,7 +20,7 @@ class POutlinedButtonTheme {
       shape: const StadiumBorder(),
       foregroundColor: Colors.white,
       side: const BorderSide(color: cWhiteColor),
-      padding: const EdgeInsets.symmetric(vertical: pButtonHeight),
+padding:  const EdgeInsets.symmetric(vertical: pButtonHeight, horizontal: pButtonWidth ),
     ),
   );
 }
