@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:get/get.dart';
 import 'package:pettie_petstore/firebase_options.dart';
-import 'package:pettie_petstore/src/blocs/wishlist/cart/cart_bloc.dart';
+
 import 'package:pettie_petstore/src/blocs/wishlist/wishlist_bloc.dart';
 import 'package:pettie_petstore/src/features/authentication/screens/on_boarding_screen/on_boarding_screen.dart';
 import 'package:pettie_petstore/src/repository/authentication_repository/authentication_repository.dart';
@@ -27,7 +27,7 @@ class MyApp extends StatelessWidget {
     return MultiBlocProvider(
       providers:[
         BlocProvider(create:(_)=> WishlistBloc()..add(StartWishlist(),),),
-         BlocProvider(create:(_)=> CartBloc()..add(CartStarted(),),),
+    
       ],
       child: GetMaterialApp(
         themeMode: ThemeMode.system,

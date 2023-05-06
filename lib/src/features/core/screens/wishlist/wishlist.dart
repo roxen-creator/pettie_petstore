@@ -8,16 +8,16 @@ import '../../models/product/product_model.dart';
 import '../widget/product_card.dart';
 import '../widget/app_bar.dart';
 
-class Wishlist extends StatelessWidget {
-  static const String routeName = '/';
+class WishlistScreen extends StatelessWidget {
+  static const String routeName = '/Wishlist';
   static Route route() {
     return MaterialPageRoute(
       settings: const RouteSettings(name: routeName),
-      builder: (_) => const Wishlist(),
+      builder: (_) => const WishlistScreen(),
     );
   }
 
-  const Wishlist({Key? key}) : super(key: key);
+  const WishlistScreen({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

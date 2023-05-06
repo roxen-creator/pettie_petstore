@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:pettie_petstore/src/features/core/screens/screens.dart';
+
+
+import '../../models/wishlist/wishlist_model.dart';
 
 class MyAppBar extends StatelessWidget with PreferredSizeWidget {
   final String title;
