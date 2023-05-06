@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:pettie_petstore/src/features/core/screens/product/product_screen.dart';
 
+
 import '../../models/product/product_model.dart';
 
 class ProductCard extends StatelessWidget {
@@ -92,24 +93,43 @@ class ProductCard extends StatelessWidget {
                         ],
                       ),
                     ),
-                    Expanded(
-                      child: IconButton(
-                        onPressed: () {},
-                        icon: const Icon(
-                          Icons.add_circle,
-                          color: Colors.white,
-                        ),
-                      ),
-                    ),
-                    iswishlist?  Expanded(
-                      child: IconButton(
-                        onPressed: () {},
-                        icon: const Icon(
-                          Icons.delete,
-                          color: Colors.white,
-                        ),
-                      ),
-                    ): const SizedBox(),
+                    // BlocBuilder<CartBloc, CartState>(
+                    //   builder: (context, state) {
+                    //     if(state is CartLoading){
+                    //       return const Center (child: CircularProgressIndicator(),);
+                    //     }if(state is CartLoaded){
+                    //       return Expanded(
+                    //       child: IconButton(
+                    //         onPressed: () {
+                    //           context
+                    //           .read()<CartBloc>().add(CartProductAdded(product));
+
+                    //         },
+                    //         icon: const Icon(
+                    //           Icons.add_circle,
+                    //           color: Colors.white,
+                    //         ),
+                    //       ),
+                    //     );
+                    //     }else{
+                    //       return const Text('Something went wrong');
+                    //     }
+
+                      
+                        
+                    //   },
+                    // ),
+                    iswishlist
+                        ? Expanded(
+                            child: IconButton(
+                              onPressed: () {},
+                              icon: const Icon(
+                                Icons.delete,
+                                color: Colors.white,
+                              ),
+                            ),
+                          )
+                        : const SizedBox(),
                   ],
                 ),
               ),

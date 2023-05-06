@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:pettie_petstore/src/features/core/models/product/product_model.dart';
 import 'package:pettie_petstore/src/features/core/screens/product/product_screen.dart';
 
+import '../features/core/models/cart/cart_model.dart';
 import '../features/core/models/category_model/category_model.dart';
 
 import '../features/core/screens/screens.dart';
